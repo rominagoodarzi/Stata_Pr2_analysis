@@ -3,7 +3,7 @@
 global data2p0 				"PATH TO DATA 2.0"
 global data3p0 				"PATH TO DATA 3.0"
 global data 				"PATH TO DATA 4.0"
-global DestinationFolder 	"PATH TO DESTINATION FOLDER"
+global DestinationFolder                "PATH TO DESTINATION FOLDER"
 
 
 ***************************************************************************************
