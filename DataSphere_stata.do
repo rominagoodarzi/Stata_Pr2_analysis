@@ -12,7 +12,7 @@ global DestinationFolder 	"PATH TO DESTINATION FOLDER"
 1. abcd_cbcls01: 			Baseline - summary scores 
 2. abcd_cbcl01: 			Baseline - raw data/CBCL
 3. abcd_yksad01: 			Youth Diagnostic Interview for DSM-5 Background Items 5 (KSADS-5)
-4. dibf01: 					Parent Diagnostic Interview for DSM-5 Background Items Full (KSADS-5)
+4. dibf01: 				Parent Diagnostic Interview for DSM-5 Background Items Full (KSADS-5)
 5. abcd_ant01: 				Youth Anthropometrics Modified From PhenX
 6. acspsw03: 				Data on Weights
 7. abcd_lt01:				Site ID
@@ -26,24 +26,24 @@ global DestinationFolder 	"PATH TO DESTINATION FOLDER"
 15. abcd_asrs01: 			Parents mental health (summary)
 16. abcd_fes01: 			Family conflict
 17. abcd_pssrs01: 			Parent Short Social Responsiveness Scale (Difficulty relating to peers and is regarded by other children as odd or weird)
-18. abcd_pksadscd01:		Parent KSADS Conduct Disorder (Bully others in the last two weeks): In the past two weeks, how often did your child make fun of other kids?
+18. abcd_pksadscd01:		        Parent KSADS Conduct Disorder (Bully others in the last two weeks): In the past two weeks, how often did your child make fun of other kids?
 19. abcd_ytbpai01: 			Positive emotions and affective well-being in past week (6, 12, and 18 months follow-up, subsample)
 20. abcd_ywpss01: 			Children's will to problem solving (one-year follow-up)
-21. psb01:					Parent prosocial behavior surveys
+21. psb01:				Parent prosocial behavior surveys
 22. abcd_psb01:				Youth prosocial behavior survey
 23. abcd_yrb01:				Physical activity (3 indicators)
 24. abcd_saiq02:			Involvement in sport activities
 25. abcd_ksad01: 			Mental Health - Symptoms and Diagnoses Parents
 26. abcd_ksad501: 			Mental Health - Symptoms and Diagnoses Youth
-27. pps01:					Prodromal Psychosis Scale
+27. pps01:				Prodromal Psychosis Scale
 28. abcd_tbss01:			Youth NIH TB Summary Scores (Fluid, crystallized, and total cognitive abilities)
 29. abcd_sss01: 			Variety of summary/composite scores: SES, social, and perinatal
 30. abcd_nsc01:				Neighboorhood safety
 31. abcd_mx01: 				Medical History Questionnaire (MHX)
 32. abcd_lpmh01:			Longitudinal Medical History Questionnaire
 33. abcd_adbc01:			Adult Behavior Checklist
-34. srpf01:					School Risk and Protective Factors Survey
-35. pmq01:					Parental Monitoring Survey
+34. srpf01:				School Risk and Protective Factors Survey
+35. pmq01:				Parental Monitoring Survey
 36. abcd_ptsd01: 			Parent Diagnostic Interview for DSM-5 (KSADS) Traumatic Events
 37. abcd_fhxssp01:			Parent Family History Summary Scores
 38. medsy01: 				Medications Survey Inventory Modified from PhenX (PMP)
@@ -53,22 +53,22 @@ global DestinationFolder 	"PATH TO DESTINATION FOLDER"
 42. abcd_ysu02:				Youth Substance Use Interview
 43. abcd_ysuip01:			Youth Substance Use Introduction and Patterns (follow-up)
 44. abcd_ps01:				Pearson Scores - Rey Auditory Verbal Learning Test, Matrix Reasoning Test, and Rey Delayed Recall Test
-45. abcd_mrinback02:		Behavioral performance measures for nBack task fMRI (working memory)
+45. abcd_mrinback02:		        Behavioral performance measures for nBack task fMRI (working memory)
 46. abcd_ple01:				Parent Life Events
 47. abcd_yle01:				Youth Life Events
 48. abcd_pbp01:				Youth Peer Behavior Profile
 49. abcd_pnhps01:			Youth Peer Network Health Protective Scaler
 50. abcd_yssbpm01:			Youth Summary Scores BPM and POA
 51. abcd_lpksad01:			Parent Diagnostic Interview for DSM-5 Background Items Full (KSAD) - follow-up
-52. abcd_socdev_p_emr01:	Social Development Parent Difficulties in Emotion Regulation
-53. abcd_socdev_child_emr01:Child Difficulties in Emotion Regulation
+52. abcd_socdev_p_emr01:	        Social Development Parent Difficulties in Emotion Regulation
+53. abcd_socdev_child_emr01:            Child Difficulties in Emotion Regulation
 54. abcd_yest01:			Youth Emotional Stroop Task
 55. abcd_esttlb01:			Emotional Stroop Task Trial Level Behavior
 56. abcd_pxccp01:			Parent PhenX Community Cohesion
 57. abcd_ysr01:				Other Resilience (Close friends)
 58. abcd_rhds01: 			Residential History Derived Scores
-59. abcd_socdev_p_nbh01:	Social Development Parent Neighborhood
-60. abcd_socdev_p_nbh01:	Social Development Parent Neighborhood
+59. abcd_socdev_p_nbh01:	        Social Development Parent Neighborhood
+60. abcd_socdev_p_nbh01:	        Social Development Parent Neighborhood
 61. abcd_pasrs01: 			Parents mental health (items)
 
 **/
@@ -4763,4 +4763,4 @@ keep id_subj period $health_speccbcl $health_syndcbcl $health_syndcbclt $health_
 
 reshape wide $health_speccbcl $health_syndcbcl $health_syndcbclt $health_syndr $bullying_vars $family_vars $friend_vars $school_vars $nhood_vars $emoreg_vars $dsm5y_MDD $asr_depre $brain_subcortical $control_vars $elevel $weights, i(id_subj) j(period)
 
-save "DestinationFolder\ABCD_AnalyticSample.dta", replace
+save "DestinationFolder\DataSphere_stata.dta", replace
